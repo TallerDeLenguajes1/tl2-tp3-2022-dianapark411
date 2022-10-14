@@ -17,7 +17,6 @@ public class Persona{
         Nombre = _nombre;
         Direccion = _direccion;
         Telefono = _telefono;
-    
     }
 
     public void mostrarPersona(){

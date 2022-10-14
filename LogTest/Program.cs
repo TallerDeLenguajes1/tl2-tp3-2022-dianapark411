@@ -3,7 +3,7 @@ using NLog;
 
 string ruta = @"C:\DIANA\Facultad\3er ANIO\2do Cuatrimestre\Taller de lenguajes II\TP3\tl2-tp3-2022-dianapark411\LogTest";
 
-//Helper.crearCSV(ruta, "cadetes", "ID; NOMBRE; DIRECCION; TELEFONO");
+//Helper.crearCSV(ruta, "cadetes", "ID;NOMBRE;DIRECCION;TELEFONO");
 
 var Logger = LogManager.GetCurrentClassLogger();
 List<Cadete> cadetes = new List<Cadete>();

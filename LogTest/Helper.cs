@@ -48,18 +48,18 @@ public static class Helper{
         }
     }
 
-    public static void leerCadetes(string ruta, string nombre, List<Cadete> cadetes)
+    public static void leerCadetes(string ruta, string nombre, List<Cadete> _cadetes)
     {
         if(File.Exists(ruta + @$"\{nombre}.csv")){
             
             StreamReader file = new StreamReader(ruta + @$"\{nombre}.csv");
 
-             string line = "";
+            string line = "";
             //Lee linea por linea hasta que termina el archivo
             while ((line = file.ReadLine()) != null)
             {
                 string[] Fila = line.Split(';');
-                cadetes.Add(new Cadete(Convert.ToInt32(Fila[0]),Fila[1],Fila[2],Convert.ToInt32(Fila[3])));
+                _cadetes.Add(new Cadete(Convert.ToInt32(Fila[0]), Fila[1], Fila[2], Convert.ToInt32(Fila[3])));
             }
         }
     }
